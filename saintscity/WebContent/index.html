@@ -4,41 +4,157 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <head>
-   
-   	  
-   	  
-   	  
       <script src="lib/widgetlib.js"></script>
       <script src="lib/jquery-3.3.1.min.js"></script>
       <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
       <script src="lib/widgetlib.js"></script>
       <script src="lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
       <script src="lib/Chosen/chosen.jquery.js"></script>
-      
       <style type="text/css">
-      	.sample {
-      		margin: 10px;
-      		cursor: pointer;
-      	}
-      	
+         .sample {
+         margin: 10px;
+         cursor: pointer;
+         }
+         
+         .perfect-fit {
+          	background: url("https://cdn.hipwallpaper.com/i/64/95/nTvi12.jpg") no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+  			opacity: 0.5;
+  			}
+  		.add-margin-top {
+  			margin-top:50px}
+  			* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FFF;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+      flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+/*   padding: 2em 0em; */
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+  padding:  40px 0px;
+  width: 240px;
+}
+
+h1,h5 {
+  text-shadow: 2px 1px white;
+  font-family: Segoe Script;
+}
+
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 275px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 15px;
+  width: 100%;
+  margin: 10px 0;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid  2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span{
+    margin: 0 auto;
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.effect04:hover{
+
+  background-color: #000;
+}
+
+/* HOVERしたら文字1を上に */
+.effect04:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+/*文字2*/
+.effect04::before{
+  content: attr(data-sm-link-text);
+	color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+/* HOVERしたら文字2を上に */
+.effect04:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+  			
       </style>
-      	
    </head>
    <body>
       <!-- Header -->
       <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
          <img class="w3-image" src="https://drive.google.com/uc?id=1EUjBGVqBObC0L2kFwievR2y4BGsKdAeW" alt="Me" width="1500" height="600">
-         <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">SAINTS CITY</h1>
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">UNDERCONSTRUCTION</h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap">SAINTS CITY</h5>
-            <h5 class="w3-hide-large" style="white-space:nowrap">UNDERCONSTRUCTION</h5>
+         <div class="add-margin-top w3-display-topmiddle w3-padding-large w3-border w3-wide w3-text-black w3-center">
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Saints City RP</h1>
+            <h5 class="w3-hide-large" style="white-space:nowrap">Saints City RP</h5>
             <h3 class="w3-hide-medium w3-hide-small">FIVE M Serious RP</h3>
          </div>
          <!-- Navbar (placed at the bottom of the header image) -->
-         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+         <div class="w3-bar w3-white w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
             <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#about" class="w3-bar-item w3-button ">About</a>
             <a href="#apply" class="w3-bar-item w3-button">Apply</a>
             <a href="#join" class="w3-bar-item w3-button">Join Us!</a>
          </div>
@@ -70,30 +186,73 @@
       <!-- Apply -->
       <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="apply">
          <h3 class="w3-center">Application for whitelisted jobs</h3>
+         
          <div class="w3-center">
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url' target="_blank">
-            <button class="sample">Apply for whitelisted</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as Mech" target="_blank">
+            <span>Mechanic Application</span>
             </a>
+            <br>Mechanic is blah blah blah
          </div>
-         <div class="w3-center">
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url' target="_blank">
-            <button class="sample">Apply for whitelisted</button>
+         
+          <div class="w3-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as EMS" target="_blank">
+            <span>EMS Application</span>
             </a>
+            <br> EMS is blah blah blah
          </div>
-         <div class="w3-center">
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url' target="_blank">
-            <button class="sample">Apply for whitelisted</button>
+         
+          <div class="w3-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as Police" target="_blank">
+            <span>Police Application</span>
             </a>
+            <br> Police is blah blah blah
+         </div>
+         
+          <div class="w3-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as Militar" target="_blank">
+            <span>Military Application</span>
+            </a>
+            <br> Military is blah blah blah
+         </div>
+         
+          <div class="w3-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as sherrif" target="_blank">
+            <span>Sheriffs Application</span>
+            </a>
+            <br>  Sheriffs is blah blah blah
+         </div>
+         
+         <div class="w3-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwjwwg0X5Z153U3keRCNh73ZsajVVJF04bUUjPUdU4mx7iNg/viewform?usp=pp_url" class="btn effect04" 
+            data-sm-link-text="Apply as operator" target="_blank">
+            <span>Transport Application</span>
+            </a>
+           <br>  Public Transport Assistance is blah blah blah
          </div>
       </div>
       <!-- Contact -->
       <div class="w3-center w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="join">
          <h3 class="w3-center">Join us</h3>
-          <a href='http://www.discord.com' target="_blank">
-            <img alt="" src="https://drive.google.com/uc?id=1LdDEnan9YDxnK6wkz54i5a6nBoKxzpyU">
-          </a>
+         
+         <div class="w3-center">
+	         <a href="https://discord.gg/FGYccHx" target="_blank">
+	         <img alt="" src="https://drive.google.com/uc?id=1LdDEnan9YDxnK6wkz54i5a6nBoKxzpyU">
+	         </a><br>
+            <a href="https://discord.gg/FGYccHx" class="btn effect04" 
+            data-sm-link-text="Click to join us in discord" target="_blank">
+            <span>JOIN NOW!</span>
+            </a>
+            <br> Join us in our discord channel
+         </div>
+          
+         </a>
       </div>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
       <!-- End page content -->
    </body>
-</html>
+</html> 
