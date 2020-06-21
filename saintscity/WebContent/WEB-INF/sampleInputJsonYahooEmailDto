@@ -1,0 +1,15 @@
+{
+	"sender": "crosscheck_alerts@svi.com.ph",
+	"password": "mycrosscheckalertmachine",
+	"receivers": ["glopega@svi.com.ph", "glopega@yahoo.com"],
+	"ccs": ["dante.arimbuyutan@svi.com.ph", "jrebagoda@svi.com.ph","lgavira@svi.com.ph"],
+	"bccs": ["hdelacruz@svi.com.ph"],
+	"subject": "SSO Change Password",
+	"date": "August 8, 2017",
+	"salutation": "Greetings! Sir/Ma'am,",
+	"body": "This is to inform you that your password has been changed.",
+	"conclusion": "Please be guided accordingly,",
+	"closing": "Regards,",
+	"signature": "SSO Admin",
+	"applicationName": "SSO"
+}

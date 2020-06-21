@@ -1,0 +1,15 @@
+{
+	"sender": "glopega@yahoo.com",
+	"password": "passw0rd123",
+	"receivers": ["glopega@svi.com.ph", "glopega@yahoo.com"],
+	"ccs": ["dante.arimbuyutan@svi.com.ph", "jrebagoda@svi.com.ph"],
+	"bccs": ["hdelacruz@svi.com.ph"],
+	"subject": "SSO Account Deactivated",
+	"date": "August 8, 2017",
+	"salutation": "Greetings! Sir/Ma'am,",
+	"body": "This is to inform you that your account has been deactivated.",
+	"conclusion": "Please be guided accordingly,",
+	"closing": "Regards,",
+	"signature": "SSO Admin",
+	"applicationName": "SSO"
+}
